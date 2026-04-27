@@ -11,15 +11,11 @@
     <button onclick="checkInput()">Check</button>
 
     <script>
-        // Function to validate the user input
         function checkInput() {
-            // Get the value from the text field
             const value = document.getElementById("userInput").value;
 
-            // Try convert to number
             const number = Number(value);
 
-            // Check if it is not a number (NaN)
             if (value.trim() === "" || isNaN(number)) {
                 alert("Please insert a number!");
             } else if (number < 10) {
