@@ -5,20 +5,15 @@
     <title>Lab 4a - Question 1</title>
 </head>
 <body>
-    <!-- Original element -->
     <div id="myElement">
         <p>Welcome to my website!</p>
     </div>
 
-    <!-- Button to trigger JavaScript -->
     <button onclick="changeText()">Change Text</button>
 
     <script>
-        // Function to change the content of the <p> element
         function changeText() {
-            // Get the <div> by id
             const divElement = document.getElementById("myElement");
-            // Get the first <p> inside the div and change its text
             const paragraph = divElement.querySelector("p");
             paragraph.textContent = "Hello there!";
         }
